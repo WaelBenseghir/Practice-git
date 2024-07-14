@@ -137,75 +137,84 @@ table {
 
 
 body {
+    min-height: 100vh;
     font-family: "Lato", sans-serif;
     background-color: #F2F5F9;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
     font-size: 1rem;
+    box-sizing: border-box;
+
 }
 
 .container {
-    background-color: white;
-    border-radius: 25px;
-    width: 418px;
+    border-radius: 1.5em;
+    box-sizing: border-box;
+    max-width: 420px;
+    background-color: #fff;
+    line-height: 1.5;
 }
 
+.images {
+    position: relative;
+    display: inline-block;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    min-height: auto;
+    width: 100%;
+    display: block;
+}
 
 .hero {
+    display: block;
     width: 100%;
-    max-width: 100%;
-    border-radius: 25px;
-}
-
-.wave {
-    transform: translateY(-65px);
-    width: 100%;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
 }
 
 h1 {
-    color: #111729;
+    font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    padding-left: 1.3rem;
-    transform: translateY(-4.0625rem);
-    line-height: 1.5;
-    font-family: "Poppins", sans-serif;
+    color: #111729;
+    max-width: 80%;
+    padding-left: 1.5em;
 }
 
 p {
-    font-size: 1rem;
     color: #677489;
-    padding-left: 1.3rem;
-    line-height: 1.5;
-    transform: translateY(-2.8125rem);
-    border-bottom: 2px solid #F2F5F9;
-    padding-bottom: 20px;
+    padding-left: 2em;
+    font-size: 1em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #F2F5F9;
+    padding-top: 1em;
 }
 
-.last{
+.last {
     display: flex;
     align-items: center;
-    transform: translateY(-1.5625rem);
+    justify-content: space-between;
+    max-width: 70%;
+    padding: 1em 2em;
+}
+
+.avatar {
+    max-width: 2.5em;
+    border-radius: 50%;
+    border: 3px solid #F2F5F9;
+}
+
+.name {
+    color: #111729;
+    font-weight: 600;
+    font-size: 1em;
 }
 
 .job {
     color: #677489;
-}
-
-.avatar {
-    height: 40px;
-    border: 4px solid #F2F5F9;
-    margin: 0 15px  0 30px;
-    border-radius: 50%;
-}
-
-.name{
-    font-weight: 600;
-}
-.spans{
-
-    font-size: 1rem;
+    font-size: 1em;
 }
